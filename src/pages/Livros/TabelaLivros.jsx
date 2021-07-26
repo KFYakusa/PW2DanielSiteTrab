@@ -40,7 +40,7 @@ const TabelaLivros = (props) => {
                             </td>
                         </tr>
                         { (props.liblist && props.liblist.length > 0) ? props.liblist.map(livro => {
-                            console.log(livro);
+                            
                             return (<tr key={livro.id}>
                                 <td>{livro.nome}</td>
                                 <td>{livro.autor}</td>

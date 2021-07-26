@@ -11,7 +11,7 @@ const Livros = (props) => {
 	const [listaLivros, setListaLivros] = useLocalStorage('@app: listLivros')
 	const [seqIdLivro, setSeqIdLivro] = useLocalStorage('@app: sequencia')
 
-	console.log("entrando em Livros");
+	
 
 
 	useEffect(() => {

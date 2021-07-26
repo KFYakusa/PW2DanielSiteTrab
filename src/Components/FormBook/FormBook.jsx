@@ -12,12 +12,8 @@ export default function FormBook(props) {
     function register(e) {
         e.preventDefault();
         if (props.newBook){
-            
-            console.log("entrando auqi")
-            console.log(livroForm);
             props.newBook(livroForm)
-
-            // console.log(props.newBook)
+            
         }
             
         else if (props.edit)
