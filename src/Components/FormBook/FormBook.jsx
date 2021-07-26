@@ -66,6 +66,9 @@ export default function FormBook(props) {
 
 const StyledForm = styled.div`
 background: url(${bggif});
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 box-shadow: 0px 0px 12px black;
 padding-top:10vh;
 height:100vh;

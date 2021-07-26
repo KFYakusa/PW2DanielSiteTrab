@@ -9,7 +9,7 @@ import bggif from '../../assets/imgs/電車.gif'
 
 const TabelaLivros = (props) => {
     const [showDelAlert, setShowDelAlert] = useState(false)
-    const [editAlert, setEditAlert] = useState(false)
+    
 
     const [deleteMessage, setDeleteMessage] = useState("não há como recuperar este livro do abismo do esquecimento")
     
@@ -51,7 +51,7 @@ const TabelaLivros = (props) => {
                                             <Edit />
                                         </Button>
                                     </Link>
-                                    <Button variant="outline-danger" onClick={() => { props.remove(livro); setShowDelAlert(livro); setEditAlert(false) }}>
+                                    <Button variant="outline-danger" onClick={() => { props.remove(livro); setShowDelAlert(livro) }}>
                                         <DeleteOutline />
                                     </Button>
                                 </td>
@@ -60,7 +60,7 @@ const TabelaLivros = (props) => {
                     </tbody>
                 </Table>
 
-                {showDelAlert && <CustomAlert variant="danger" titulo="livro excluido" transition text={deleteMessage} closeLabel="" dismissible onClose={() => setShowDelAlert(false)} />}
+                {showDelAlert && <CustomAlert variant="danger" titulo="livro excluido" transition text={deleteMessage} closeLabel="" dismissible  />}
             </Container>
         </StyledTabela>
     )
@@ -72,7 +72,7 @@ export default TabelaLivros
 const StyledTabela = styled.div`
 background: url(${bggif});
 height:100vh;
-padding:10vh;
+padding:3vw;
 padding-top: 2vh;
 h1{
     text-align:center;
