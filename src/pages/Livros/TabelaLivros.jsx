@@ -60,19 +60,6 @@ const TabelaLivros = (props) => {
                     </tbody>
                 </Table>
 
-
-                {/*                 
-                
-                
-                {props.liblist.length === 0 && (
-                    <Link to={`/editLivro/`}>
-                        <Button variant="outline-success" >
-                            <Add/>
-                        </Button>
-                    </Link>)}
-                {props.liblist.length > 0 && (
-                    
-                )} */}
                 {showDelAlert && <CustomAlert variant="danger" titulo="livro excluido" transition text={deleteMessage} closeLabel="" dismissible onClose={() => setShowDelAlert(false)} />}
             </Container>
         </StyledTabela>

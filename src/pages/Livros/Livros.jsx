@@ -1,16 +1,15 @@
 import React, { useEffect } from 'react'
-import { useState } from 'react'
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import TabelaLivros from './TabelaLivros'
 import FormBook from '../../Components/FormBook/FormBook'
 import useLocalStorage from '../../hooks/useLocalStorage'
-// import SimpleStorage from 'react-simple-storage'
 
  const Livros = (props)=> {
     
-    const [listaLivros, setListaLivros, removeListaLivros] = useLocalStorage('@app: listLivros')
-    const [seqIdLivro, setSeqIdLivro, removeSeqIdLivro] = useLocalStorage('@app: sequencia')
+    const [listaLivros, setListaLivros] = useLocalStorage('@app: listLivros')
+    const [seqIdLivro, setSeqIdLivro] = useLocalStorage('@app: sequencia')
     
     console.log("entrando em Livros");
 
