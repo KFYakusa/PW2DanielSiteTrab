@@ -4,12 +4,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+import 'bootstrap/dist/css/bootstrap.min.css';
+ReactDOM.render( <App />, document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
